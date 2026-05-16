@@ -1,4 +1,4 @@
-## 线性神经网络与线性回归 (PyTorch)
+# 线性神经网络与线性回归 (PyTorch)
 
 > 作者：出自 Nidhogg-max
 
