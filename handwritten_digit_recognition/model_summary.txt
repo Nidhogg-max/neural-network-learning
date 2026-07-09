@@ -1,0 +1,38 @@
+模型结构概要
+============================================================
+CNNHandwriting(
+  (features): Sequential(
+    (0): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (4): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (5): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU()
+    (7): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Dropout(p=0.25, inplace=False)
+    (1): Linear(in_features=3136, out_features=128, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=128, out_features=10, bias=True)
+  )
+)
+
+总参数量: 421,834 (约 0.42 M)
+可训练参数量: 421,834 (约 0.42 M)
+
+各层参数量明细:
+  features.0.weight: 288
+  features.0.bias: 32
+  features.1.weight: 32
+  features.1.bias: 32
+  features.4.weight: 18,432
+  features.4.bias: 64
+  features.5.weight: 64
+  features.5.bias: 64
+  classifier.1.weight: 401,408
+  classifier.1.bias: 128
+  classifier.4.weight: 1,280
+  classifier.4.bias: 10
