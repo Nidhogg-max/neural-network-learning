@@ -1,6 +1,3 @@
-好的，我为你生成一个可以直接复制的 `README.md` 文件。内容覆盖项目介绍、功能模块、环境依赖、使用说明、模型结构、结果展示以及作者信息。
-
-```markdown
 # 📝 Handwritten Digit Recognition System
 
 > 基于卷积神经网络（CNN）的手写数字识别系统 —— 从训练到部署完整解决方案
